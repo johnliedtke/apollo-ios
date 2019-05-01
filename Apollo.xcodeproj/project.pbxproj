@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C0ACCB1227A083900246C2E /* Apollo-Project-QADeployment.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 0C0ACCB0227A083900246C2E /* Apollo-Project-QADeployment.xcconfig */; };
 		54DDB0921EA045870009DD99 /* InMemoryNormalizedCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DDB0911EA045870009DD99 /* InMemoryNormalizedCache.swift */; };
 		9F0CA4451EE7F9E90032DD39 /* ApolloTestSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F8A95781EC0FC1200304A2D /* ApolloTestSupport.framework */; };
 		9F0CA4461EE7F9E90032DD39 /* ApolloTestSupport.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9F8A95781EC0FC1200304A2D /* ApolloTestSupport.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -229,6 +230,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0C0ACCB0227A083900246C2E /* Apollo-Project-QADeployment.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Apollo-Project-QADeployment.xcconfig"; sourceTree = "<group>"; };
 		54DDB0911EA045870009DD99 /* InMemoryNormalizedCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InMemoryNormalizedCache.swift; sourceTree = "<group>"; };
 		90690D05224333DA00FC2E54 /* Apollo-Project-Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Apollo-Project-Debug.xcconfig"; sourceTree = "<group>"; };
 		90690D06224333DA00FC2E54 /* Apollo-Target-Framework.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Apollo-Target-Framework.xcconfig"; sourceTree = "<group>"; };
@@ -416,6 +418,7 @@
 		90690D04224333DA00FC2E54 /* Configuration */ = {
 			isa = PBXGroup;
 			children = (
+				0C0ACCB0227A083900246C2E /* Apollo-Project-QADeployment.xcconfig */,
 				90690D05224333DA00FC2E54 /* Apollo-Project-Debug.xcconfig */,
 				90690D08224333DA00FC2E54 /* Apollo-Project-Performance-Testing.xcconfig */,
 				90690D07224333DA00FC2E54 /* Apollo-Project-Release.xcconfig */,
@@ -945,6 +948,7 @@
 			files = (
 				9F2A74DB2137C21500E63C85 /* check-and-run-apollo-codegen.sh in Resources */,
 				9FE3F3981DADBD870072078F /* check-and-run-apollo-cli.sh in Resources */,
+				0C0ACCB1227A083900246C2E /* Apollo-Project-QADeployment.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1232,6 +1236,69 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		0C0ACCB2227A087800246C2E /* QADeployment */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90690D05224333DA00FC2E54 /* Apollo-Project-Debug.xcconfig */;
+			buildSettings = {
+			};
+			name = QADeployment;
+		};
+		0C0ACCB3227A087800246C2E /* QADeployment */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90690D06224333DA00FC2E54 /* Apollo-Target-Framework.xcconfig */;
+			buildSettings = {
+			};
+			name = QADeployment;
+		};
+		0C0ACCB4227A087900246C2E /* QADeployment */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90690D0B2243345500FC2E54 /* Apollo-Target-Tests.xcconfig */;
+			buildSettings = {
+			};
+			name = QADeployment;
+		};
+		0C0ACCB5227A087900246C2E /* QADeployment */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90690D2322433C5900FC2E54 /* Apollo-Target-CacheDependentTests.xcconfig */;
+			buildSettings = {
+			};
+			name = QADeployment;
+		};
+		0C0ACCB6227A087900246C2E /* QADeployment */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90690D2422433C8000FC2E54 /* Apollo-Target-PerformanceTests.xcconfig */;
+			buildSettings = {
+			};
+			name = QADeployment;
+		};
+		0C0ACCB7227A087900246C2E /* QADeployment */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90690D2122433C1900FC2E54 /* Apollo-Target-StarWarsAPI.xcconfig */;
+			buildSettings = {
+			};
+			name = QADeployment;
+		};
+		0C0ACCB8227A087900246C2E /* QADeployment */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90690D2222433C2800FC2E54 /* Apollo-Target-GitHubAPI.xcconfig */;
+			buildSettings = {
+			};
+			name = QADeployment;
+		};
+		0C0ACCB9227A087900246C2E /* QADeployment */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90690D142243363D00FC2E54 /* Apollo-Target-TestHost-iOS.xcconfig */;
+			buildSettings = {
+			};
+			name = QADeployment;
+		};
+		0C0ACCBA227A087900246C2E /* QADeployment */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90690D2522433CAF00FC2E54 /* Apollo-Target-TestSupport.xcconfig */;
+			buildSettings = {
+			};
+			name = QADeployment;
+		};
 		9F8A957D1EC0FC1200304A2D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 90690D2522433CAF00FC2E54 /* Apollo-Target-TestSupport.xcconfig */;
@@ -1428,6 +1495,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9F8A957D1EC0FC1200304A2D /* Debug */,
+				0C0ACCBA227A087900246C2E /* QADeployment */,
 				9F8A957E1EC0FC1200304A2D /* Release */,
 				9F8A957F1EC0FC1200304A2D /* PerformanceTesting */,
 			);
@@ -1438,6 +1506,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9FA6ABC21EC0A988000017BE /* Debug */,
+				0C0ACCB5227A087900246C2E /* QADeployment */,
 				9FA6ABC31EC0A988000017BE /* Release */,
 				9FA6ABC41EC0A988000017BE /* PerformanceTesting */,
 			);
@@ -1448,6 +1517,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9FACA9C31F42E67200AE2DBD /* Debug */,
+				0C0ACCB8227A087900246C2E /* QADeployment */,
 				9FACA9C41F42E67200AE2DBD /* Release */,
 				9FACA9C51F42E67200AE2DBD /* PerformanceTesting */,
 			);
@@ -1458,6 +1528,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9FC6313C1E6AE2080062707E /* Debug */,
+				0C0ACCB6227A087900246C2E /* QADeployment */,
 				9FC6313D1E6AE2080062707E /* Release */,
 				9FEFCFCF1E6C65CE0061834C /* PerformanceTesting */,
 			);
@@ -1468,6 +1539,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9FC750561D2A532D00458D91 /* Debug */,
+				0C0ACCB2227A087800246C2E /* QADeployment */,
 				9FC750571D2A532D00458D91 /* Release */,
 				9FEFCFCD1E6C65CE0061834C /* PerformanceTesting */,
 			);
@@ -1478,6 +1550,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9FC750591D2A532D00458D91 /* Debug */,
+				0C0ACCB3227A087800246C2E /* QADeployment */,
 				9FC7505A1D2A532D00458D91 /* Release */,
 				9FEFCFCE1E6C65CE0061834C /* PerformanceTesting */,
 			);
@@ -1488,6 +1561,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9FC7505C1D2A532D00458D91 /* Debug */,
+				0C0ACCB4227A087900246C2E /* QADeployment */,
 				9FC7505D1D2A532D00458D91 /* Release */,
 				9FEFCFD01E6C65CE0061834C /* PerformanceTesting */,
 			);
@@ -1498,6 +1572,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9FCE2D041E6C213D00E34457 /* Debug */,
+				0C0ACCB7227A087900246C2E /* QADeployment */,
 				9FCE2D051E6C213D00E34457 /* Release */,
 				9FEFCFD61E6C65CE0061834C /* PerformanceTesting */,
 			);
@@ -1508,6 +1583,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9FD637F11E6ACF88001EDBC8 /* Debug */,
+				0C0ACCB9227A087900246C2E /* QADeployment */,
 				9FD637F21E6ACF88001EDBC8 /* Release */,
 				9FEFCFD71E6C65CE0061834C /* PerformanceTesting */,
 			);
